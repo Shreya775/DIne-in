@@ -40,9 +40,9 @@ CREATE TABLE `tbl_admin` (
 
 INSERT INTO `tbl_admin` (`id`, `full_name`, `username`, `password`) VALUES
 (12, 'Shreya', 'Ranjan', 'Shreya'),
-(13, 'Ananta', 'Nath', 'Ananta');
-
-
+(13, 'Ananta', 'Nath', 'Ananta'),
+(14, 'Harshita', 'har', 'har'),
+(15, 'Asif', 'as', 'as');
 -- --------------------------------------------------------
 
 --
@@ -111,7 +111,7 @@ CREATE TABLE `tbl_order` (
   `customer_name` varchar(255) NOT NULL,
   `customer_contact` varchar(20) NOT NULL,
   `customer_email` varchar(150) NOT NULL,
-  `customer_tablenumber` int NOT NULL
+  `customer_tablenumber` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -121,7 +121,7 @@ CREATE TABLE `tbl_order` (
 INSERT INTO `tbl_order` (`id`, `food`, `price`, `qty`, `total`, `order_date`, `status`, `customer_name`, `customer_contact`, `customer_email`, `customer_tablenumber`) VALUES
 (1, 'Sadeko Momo', '150.00', 3, '450.00', '2020-11-30 03:49:48', 'Cancelled', "EFGH", '+91 9078987656', 'ghi@pes.edu', 1),
 (2, 'Best Burger', '190.00', 4, '760.00', '2020-11-30 03:52:43', 'Delivered', "ABCD", '+91 7689876789', 'def@pes.edu', 2),
-(3, 'Mixed Pizza', '270.00', 2, '540.00', '2020-11-30 04:07:17', 'On Delivery', "HIJK", '+91 9087452345', 'abc@pes.edu', 5),
+(3, 'Mixed Pizza', '270.00', 2, '540.00', '2020-11-30 04:07:17', 'On Delivery', "HIJK", '+91 9087452345', 'abc@pes.edu', 5);
 
 --
 -- Indexes for dumped tables
